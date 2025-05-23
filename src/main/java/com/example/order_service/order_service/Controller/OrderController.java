@@ -16,6 +16,7 @@ public class OrderController {
     @Autowired
     private OrderService orderService;
 
+    // Just a comment.
     @PostMapping
     public ResponseEntity<OrderDTO> createOrder(@RequestBody OrderDTO orderDTO) {
         Order order = orderService.createOrderFromDTO(orderDTO);
